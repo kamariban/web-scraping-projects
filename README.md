@@ -29,12 +29,6 @@ The results are sorted by vote count.
 
 ## Requirements
 
-- Python 3.x  
-- requests  
-- beautifulsoup4  
-
-Install dependencies:
-
 pip install requests beautifulsoup4
 
 ---
@@ -61,13 +55,4 @@ Each result looks like:
   'votes': 123
 }
 
----
-
-## Notes
-
-- Scrapes multiple pages (currently first 3 pages)  
-- Only includes posts with visible vote counts  
-- Output is printed using `pprint` for readability  
-
----
 
