@@ -27,12 +27,6 @@ The results are sorted by vote count.
 
 ---
 
-## Requirements
-
-pip install requests beautifulsoup4
-
----
-
 ## How to Run
 
 1. Save the script (for example: `hacker_news_scraper.py`)
