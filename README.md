@@ -1,4 +1,4 @@
-# Web Scraping Projects
+### Web Scraping Projects
 
 A collection of web scraping projects built using Python.  
 These projects focus on extracting, cleaning, and working with data from real websites.
