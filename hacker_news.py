@@ -23,7 +23,7 @@ def create_custom_hacker_news(pages):
     for soup in pages:
 
         # Each post on Hacker News is inside a <tr class="athing">
-        # So this grabs all posts on the page
+        # Rhis grabs all posts on the page
         posts = soup.select('.athing')
 
         # Process each post individually
@@ -49,7 +49,7 @@ def create_custom_hacker_news(pages):
             # So we only include posts where votes exist
             if vote:
                 # Extract the number from "123 points"
-                # split() → ["123", "points"] → take first element
+                # split() -> ["123", "points"] -> take first element ["123"] -> convert to int  
                 points = int(vote.get_text().split()[0])
 
                 # Store structured data as a dictionary
@@ -73,7 +73,7 @@ soup3 = get_soup('https://news.ycombinator.com/news?p=3')
 result = create_custom_hacker_news([soup1, soup2, soup3])
 
 
-# Pretty print makes nested data easier to read
-pprint.pprint(result)
 
-# print(result)  # raw print (less readable)
+pprint.pprint(result)# pretty print
+
+# print(result)  # raw print 
