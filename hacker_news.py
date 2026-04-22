@@ -43,5 +43,6 @@ soup3 = get_soup('https://news.ycombinator.com/news?p=3')
 
 result = create_custom_hacker_news([soup1, soup2, soup3])
 
-#pprint.pprint(result)
-print(result)
+pprint.pprint(result)
+
+#print(result)
