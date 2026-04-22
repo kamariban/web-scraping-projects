@@ -39,14 +39,13 @@ def create_custom_hacker_news(pages):
 
             # Hacker News stores metadata (votes, author, comments)
             # in the NEXT table row, not the same one
-            # So we move to the next sibling <tr>
+            # So move to the next sibling <tr>
             subtext = post.find_next_sibling('tr').select_one('.subtext')
 
             # Votes are inside: <span class="score">123 points</span>
             vote = subtext.select_one('.score')
 
-            # Some posts (like job posts) don’t have votes
-            # So we only include posts where votes exist
+            # Only want to include posts where votes exist
             if vote:
                 # Extract the number from "123 points"
                 # split() -> ["123", "points"] -> take first element ["123"] -> convert to int  
