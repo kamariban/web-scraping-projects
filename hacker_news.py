@@ -20,13 +20,12 @@ def create_custom_hacker_news(pages):
             title = title_tag.get_text()
             link = title_tag.get('href')
 
-            # get the subtext row (next sibling)
+            # get the subtext row 
             subtext = post.find_next_sibling('tr').select_one('.subtext')
             vote = subtext.select_one('.score')
 
             if vote:
                 points = int(vote.get_text().split()[0])
-
                 hn.append({
                     'title': title,
                     'link': link,
@@ -36,7 +35,7 @@ def create_custom_hacker_news(pages):
     return sort_stories_by_votes(hn)
 
 
-# pages
+#Pages
 soup1 = get_soup('https://news.ycombinator.com/news')
 soup2 = get_soup('https://news.ycombinator.com/news?p=2')
 soup3 = get_soup('https://news.ycombinator.com/news?p=3')
