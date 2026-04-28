@@ -12,19 +12,16 @@ This script scrapes the front pages of Hacker News and extracts:
 - Title of each post  
 - Link to the article  
 - Number of upvotes
-- 
+  
 The results are sorted by vote count.
 
 ---
-
 ## How It Works
-
 - Sends requests to Hacker News pages  
 - Parses HTML using BeautifulSoup  
 - Extracts post data from the page structure  
 - Stores results in a list of dictionaries  
 - Sorts posts based on vote count  
-
 ---
 
 ## How to Run
