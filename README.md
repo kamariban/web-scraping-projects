@@ -26,13 +26,13 @@ The results are sorted by vote count.
 
 ## How to Run
 
-1. Save the script (for example: `hacker_news_scraper.py`)
+1. Save the script (for example: `hacker_news.py`)
 
 2. Open a terminal in the project folder
 
 3. Run:
 
-python hacker_news_scraper.py
+python hacker_news.py
 
 ---
 
