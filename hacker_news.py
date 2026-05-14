@@ -48,7 +48,7 @@ def create_custom_hacker_news(pages):
             # only want to include posts where votes exist
             if vote:
                 # extract the number from "123 points"
-                # split() -> ["123", "points"] -> take first element ["123"] -> convert to int  
+                # split() - > ["123", "points"] take first element[0]= ["123"] then convert to int  
                 points = int(vote.get_text().split()[0])
 
                 # store structured data as a dictionary
